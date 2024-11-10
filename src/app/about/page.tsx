@@ -9,13 +9,14 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiShadcnui } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
+import { dancingScript } from "@/font"
 
 function About() {
   return (
     <div>
       <div className={style.about}>
         <div className={style.textDiv}>
-          <h1>Samreen Saif</h1>
+          <h1 style={{ fontFamily: dancingScript.style.fontFamily }}>Samreen Saif</h1>
           <p>Freelance Web Developer</p>
 
           <p className={style.font}>

@@ -5,6 +5,7 @@ import { IoRocketSharp } from "react-icons/io5";
 import { RiGitBranchLine } from "react-icons/ri";
 import { CgDebug } from "react-icons/cg";
 import Card from '@/components/card/Card';
+import { dancingScript } from '@/font';
 
 function Services() {
   return (
@@ -12,7 +13,7 @@ function Services() {
 
 
         <div className={style.topDiv}>
-            <h1>My Services</h1>
+            <h1 style={{ fontFamily: dancingScript.style.fontFamily }}>My Services</h1>
             <p>As a frontend developer, I specialize in creating responsive, user-friendly websites with optimized performance. I focus on <br /> UI design, integration, debugging, accessibility, and continuous improvement to ensure seamless user experiences.
             </p>
         </div>

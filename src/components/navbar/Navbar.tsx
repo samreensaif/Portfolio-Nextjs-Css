@@ -2,6 +2,7 @@
 import React from "react";
 import style from "./Navbar.module.css";
 import { RiMenu3Fill } from "react-icons/ri";
+import { dancingScript } from "@/font"
 
 
 
@@ -21,7 +22,7 @@ function Navbar() {
       <nav className={style.nav}>
         
           
-          <h1 >Samreen Saif.</h1>
+          <h1  style={{ fontFamily: dancingScript.style.fontFamily }}>Samreen Saif.</h1>
        
 
         

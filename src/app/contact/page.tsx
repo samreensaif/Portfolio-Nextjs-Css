@@ -1,5 +1,6 @@
 import React from 'react';
 import style from "./Contact.module.css";
+import { dancingScript } from '@/font';
 
 function Contact() {
   return (
@@ -7,7 +8,7 @@ function Contact() {
     <div className={style.contact}>
     <div className={style.formDiv}>
       <div className={style.contactTitle}>
-        <h1>Connect Me</h1>
+        <h1 style={{ fontFamily: dancingScript.style.fontFamily }}>Connect Me</h1>
         <p>Let&apos;s turn your vision into reality—shoot me a message!</p>
       </div>
 
