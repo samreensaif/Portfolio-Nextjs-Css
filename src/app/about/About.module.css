@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Grey+Qo&display=swap');
+
+
 .about{
     width:100%;
-    
+    height:auto;
     background-color: #dde5b6;
     display:flex;
     justify-content: space-around;
@@ -15,6 +18,7 @@
     padding-left:50px;
     padding-right:30px;
     text-align: left;
+    margin-bottom: 100px;
     
 }
 
@@ -89,6 +93,7 @@
     display: flex;
     justify-content: space-evenly;
    
+    
     padding-top:20px;
     
 }
