@@ -27,12 +27,12 @@ function Herosection() {
 
     <div className={style.icons}>
 
-    <FaFacebookF color={"#6c584c"} size={30}/>
-    <FaInstagramSquare color={"#6c584c"} size={30}/>
-    <FaGithub color={"#6c584c"} size={30}/>
-    <SiVercel color={"#6c584c"} size={30}/>
-    <FaLinkedinIn color={"#6c584c"} size={30}/>
-    <FaTwitter color={"#6c584c"} size={30}/>
+    <FaFacebookF color={"#6c584c"}  className={style.size}/>
+    <FaInstagramSquare color={"#6c584c"}  className={style.size}/>
+    <FaGithub color={"#6c584c"}  className={style.size}/>
+    <SiVercel color={"#6c584c"}  className={style.size}/>
+    <FaLinkedinIn color={"#6c584c"}  className={style.size}/>
+    <FaTwitter color={"#6c584c"}  className={style.size}/>
 
     </div>
     

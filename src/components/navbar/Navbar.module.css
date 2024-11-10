@@ -75,18 +75,14 @@
         display:block;
     }
 
-    .nav .logo{
-        margin-left: 30px;
-    }
-
 
     .adjust{
         
         position: absolute;
         top: 96px;
         right: 0;
-        width: 50%;
-        height:432px;
+        width: 100%;
+        height:332px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -94,7 +90,7 @@
         box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.2);
         z-index: 10000;
         backdrop-filter: grayscale(100%) blur(5px); /* Applies a full grayscale and a 5-pixel blur */
-        background-color: rgba(255, 255, 255, 0.7)
+        background-color: rgb(218, 225, 179, 0.7)
        
     }
 
@@ -109,21 +105,9 @@
         
     }
     .adjust ul li{
-        font-size: 30px; 
+        font-size: 25px; 
         font-weight: 600;
     }
 
-    .adjust button{
-        width: 150px;
-        height:50px;
-        font-size: 20px;
-        font-weight: 500;
-        border-radius: 10px;
-        margin-bottom:20px;
-        border:.125rem solid #000000;
-        &:hover{
-            background-color: #EBD96B;
-            font-weight: 600;
-        }
-    }
+    
 }

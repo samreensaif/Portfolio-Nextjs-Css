@@ -82,7 +82,7 @@ function Navbar() {
       
       
     </div>)}
-    <RiMenu3Fill size={60} className={style.menu} onClick={showFunc}/>
+    <RiMenu3Fill color="#6C584C" size={20} className={style.menu} onClick={showFunc}/>
         
       </nav>
     </div>

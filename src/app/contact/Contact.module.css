@@ -109,3 +109,27 @@
         color:#6c584c;
     }
 }
+
+
+@media (max-width: 768px) {
+
+    .contact{
+        margin-top: 0px;
+    }
+    .contactForm {
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    }
+
+    .contactTitle h1 {
+        font-size: 50px;
+    }
+
+    .contactTitle p {
+        font-size: 18px;
+    }
+}
