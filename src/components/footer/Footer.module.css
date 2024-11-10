@@ -1,0 +1,13 @@
+
+.footer {
+    background-color: #ADC178;
+    color: #6C584C;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    
+}
+.footer a {
+    color:#6C584C;
+    text-decoration: underline;
+}
