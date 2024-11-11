@@ -1,40 +1,84 @@
 import React from 'react'
 import style from "./Herosection.module.css"
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa6";
-import { SiVercel } from "react-icons/si";
-import { FaTwitter } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { SiVercel } from 'react-icons/si';
 import { SiFiverr } from "react-icons/si";
 import { FaUpwork } from "react-icons/fa6";
 import { SiFreelancer } from "react-icons/si";
 import { SiToptal } from "react-icons/si";
+import {  merriweather, sourGummy } from '@/font';
 
 
 function Herosection() {
   return (
     <div className={style.hero}>
 
-    <h1>Hey! I&apos;m <span className={style.color} style={{fontWeight:"bold"}}>SAMREEN SAIF.</span><br /><span className={style.color}> I</span>&apos;m <span className={style.color}>A F</span>rontend <span className={style.color}>W</span>eb <span className={style.color}>D</span>eveloper.</h1>
+    <h1 style={{ fontFamily: merriweather.style.fontFamily }}>Hey! I&apos;m <span className={style.color} style={{ fontFamily: sourGummy.style.fontFamily }}>SAMREEN SAIF.</span><br />A Frontend Web Developer.</h1>
     
     
-    <p>I can build user interface for web sites and applications with React JS and Next.Js <br />
+    <p style={{ fontFamily: merriweather.style.fontFamily }}>I can build user interface for web sites and applications with React JS and Next.Js <br />
     I love the front end development.</p>
     
     
-    <button>Hire Me</button>
+    <a href="/contact">
+
+
+    <button>Hire Me </button>
+    </a>
+
+
 
     <div className={style.icons}>
+        <a
+          href="https://www.facebook.com/samreen.saif"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFacebookF color={"#6c584c"}  className={style.size} />
+        </a>
 
-    <FaFacebookF color={"#6c584c"}  className={style.size}/>
-    <FaInstagramSquare color={"#6c584c"}  className={style.size}/>
-    <FaGithub color={"#6c584c"}  className={style.size}/>
-    <SiVercel color={"#6c584c"}  className={style.size}/>
-    <FaLinkedinIn color={"#6c584c"}  className={style.size}/>
-    <FaTwitter color={"#6c584c"}  className={style.size}/>
+        <a
+          href="https://www.instagram.com/samreen_saif4"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagramSquare color={"#6c584c"}  className={style.size} />
+        </a>
 
-    </div>
+        <a
+          href="https://www.github.com/samreensaif"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub color={"#6c584c"}  className={style.size} />
+        </a>
+
+        <a
+          href="https://www.vercel.com/samreensaif-projects"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <SiVercel color={"#6c584c"}  className={style.size} />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/samreen-saif-16141027a/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedinIn color={"#6c584c"}  className={style.size} />
+        </a>
+
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaTwitter color={"#6c584c"}  className={style.size} />
+        </a>
+      </div>
+
+
     
     <div className={style.bottomDiv}>
 

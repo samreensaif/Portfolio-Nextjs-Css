@@ -9,7 +9,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiShadcnui } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
-import { dancingScript } from "@/font"
+import { dancingScript, merriweather } from "@/font"
 
 function About() {
   return (
@@ -17,9 +17,9 @@ function About() {
       <div className={style.about}>
         <div className={style.textDiv}>
           <h1 style={{ fontFamily: dancingScript.style.fontFamily }}>Samreen Saif</h1>
-          <p>Freelance Web Developer</p>
+          <p style={{ fontFamily: merriweather.style.fontFamily }}>Freelance Web Developer</p>
 
-          <p className={style.font}>
+          <p className={style.font} style={{ fontFamily: merriweather.style.fontFamily }}>
             I can build user interface for web sites and applications with React
             JS and Next.Js I love the front end development. I am a self learner
             and I am always looking to learn more about the field of web

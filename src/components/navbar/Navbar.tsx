@@ -2,7 +2,7 @@
 import React from "react";
 import style from "./Navbar.module.css";
 import { RiMenu3Fill } from "react-icons/ri";
-import { dancingScript } from "@/font"
+import { dancingScript, merriweather } from "@/font"
 
 
 
@@ -27,17 +27,22 @@ function Navbar() {
 
         
         {isOpen == true ?(
-          <div className={`${style.links} ${style.adjust}`}>
+          <div className={`${style.links} ${style.adjust}`} style={{ fontFamily: merriweather.style.fontFamily }} >
           
-          <ul>
-            <li>
-              <Link href={"/"} >
+          <ul >
+            <li >
+              <Link  href={"/"} >
                 Home
               </Link>
             </li>
             <li>
               <Link href={"/about"} >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link href={"/projects"} >
+                Projects
               </Link>
             </li>
             <li>
@@ -56,7 +61,7 @@ function Navbar() {
       </div>
         )
       :
-      (<div className={`${style.links}`}>
+      (<div className={`${style.links}` }style={{ fontFamily: merriweather.style.fontFamily }}>
           
         <ul>
           <li>
@@ -69,6 +74,11 @@ function Navbar() {
               About
             </Link>
           </li>
+          <li>
+              <Link href={"/projects"} >
+                Projects
+              </Link>
+            </li>
           <li>
             <Link href={"/services"} >
               Services

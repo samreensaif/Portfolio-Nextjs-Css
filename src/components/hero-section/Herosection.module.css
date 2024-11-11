@@ -12,19 +12,22 @@
 
 .color{
     color:#6c584c;
-    
+    font-size:3.5rem ;
+    text-decoration: underline;
 
 }
 
 .hero h1{
-    font-size: 3.125rem;
+    margin-top:40px;
+    font-size: 2.5rem;
     text-align: center;
-
+    color:#6C584C;
 }
 
 .hero p{
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
+    color:#6c584c;
     
 }
 
@@ -35,6 +38,7 @@
     text-align: center;
     font-size: 18px;
     border-radius: 10px;
+    color:#6c584c;
     border:none;
     outline: none;
     padding:0 30px;
@@ -42,7 +46,7 @@
     &:hover{
         box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.2);
         font-weight: 500;
-        color:#6c584c;
+        
     }
 }
 

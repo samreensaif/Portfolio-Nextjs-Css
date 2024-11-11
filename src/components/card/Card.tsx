@@ -1,5 +1,6 @@
 import React from 'react'
 import style from "./Card.module.css"
+import { merriweather } from '@/font';
 
 
 
@@ -22,9 +23,9 @@ function Card( props: CardProps) {
 
 </div>
 
-<div className={style.content}>
+<div className={style.content} style={{ fontFamily: merriweather.style.fontFamily }}>
 
-    <h1>{props.title}</h1>
+    <h1 >{props.title}</h1>
     <p>{props.desc}</p>
 </div>
 
