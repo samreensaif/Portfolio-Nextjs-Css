@@ -48,6 +48,10 @@
         font-weight: 500;
         
     }
+
+    &:active{
+        transform: scale(0.9);
+    }
 }
 
 .hero .icons{

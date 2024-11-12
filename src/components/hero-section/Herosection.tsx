@@ -1,4 +1,7 @@
-import React from 'react'
+"use client"
+
+
+import React, { useEffect } from 'react'
 import style from "./Herosection.module.css"
 import { FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { SiVercel } from 'react-icons/si';
@@ -7,28 +10,45 @@ import { FaUpwork } from "react-icons/fa6";
 import { SiFreelancer } from "react-icons/si";
 import { SiToptal } from "react-icons/si";
 import {  merriweather, sourGummy } from '@/font';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Herosection() {
+
+
+
+
+  useEffect(() => {
+    AOS.init({
+      // Customize options here
+      duration: 2500, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
+
+
   return (
     <div className={style.hero}>
 
-    <h1 style={{ fontFamily: merriweather.style.fontFamily }}>Hey! I&apos;m <span className={style.color} style={{ fontFamily: sourGummy.style.fontFamily }}>SAMREEN SAIF.</span><br />A Frontend Web Developer.</h1>
+    <h1 data-aos="fade-right" data-aos-delay="600" style={{ fontFamily: merriweather.style.fontFamily }}>Hey! I&apos;m <span className={style.color} style={{ fontFamily: sourGummy.style.fontFamily }}>SAMREEN SAIF.</span><br />A Frontend Web Developer.</h1>
     
     
-    <p style={{ fontFamily: merriweather.style.fontFamily }}>I can build user interface for web sites and applications with React JS and Next.Js <br />
+    <p data-aos="fade-left" data-aos-delay="1000"style={{ fontFamily: merriweather.style.fontFamily }}>I can build user interface for web sites and applications with React JS and Next.Js <br />
     I love the front end development.</p>
     
     
     <a href="/contact">
 
 
-    <button>Hire Me </button>
+    <button data-aos="zoom-in" data-aos-delay="1400">Hire Me </button>
     </a>
 
 
 
-    <div className={style.icons}>
+    <div data-aos="zoom-in" data-aos-delay="2000" className={style.icons}>
         <a
           href="https://www.facebook.com/samreen.saif"
           target="_blank"

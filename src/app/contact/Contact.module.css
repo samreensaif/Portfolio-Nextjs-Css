@@ -122,6 +122,10 @@
         color:#6c584c;
     }
 
+    &:active{
+        transform: scale(0.9);
+    }
+
 }
 
     /* Icon size and color styling */

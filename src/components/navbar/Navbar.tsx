@@ -1,8 +1,10 @@
  "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Navbar.module.css";
 import { RiMenu3Fill } from "react-icons/ri";
 import { dancingScript, merriweather } from "@/font"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
@@ -17,19 +19,29 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
+
+  useEffect(() => {
+    AOS.init({
+      // Customize options here
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
   return (
     <div>
-      <nav className={style.nav}>
+      <nav  className={style.nav} >
         
           
-          <h1  style={{ fontFamily: dancingScript.style.fontFamily }}>Samreen Saif.</h1>
+          <h1 data-aos="fade-right" style={{ fontFamily: dancingScript.style.fontFamily }}>Samreen Saif.</h1>
        
 
         
         {isOpen == true ?(
           <div className={`${style.links} ${style.adjust}`} style={{ fontFamily: merriweather.style.fontFamily }} >
           
-          <ul >
+          <ul data-aos="fade-left">
             <li >
               <Link  href={"/"} >
                 Home
@@ -63,7 +75,7 @@ function Navbar() {
       :
       (<div className={`${style.links}` }style={{ fontFamily: merriweather.style.fontFamily }}>
           
-        <ul>
+        <ul data-aos="fade-left">
           <li>
             <Link href={"/"} >
               Home

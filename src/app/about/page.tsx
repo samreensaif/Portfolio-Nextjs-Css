@@ -1,4 +1,7 @@
-import React from 'react'
+"use client"
+
+
+import React, { useEffect } from 'react'
 import style from "./About.module.css";
 import Image from 'next/image';
 import { FaHtml5 } from "react-icons/fa";
@@ -10,8 +13,23 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { SiShadcnui } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { dancingScript, merriweather } from "@/font"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
+
+  useEffect(() => {
+    AOS.init({
+      // Customize options here
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
+
+
+
   return (
     <div>
       <div className={style.about}>
@@ -28,7 +46,7 @@ function About() {
 
           <button>Contact Me</button>
         </div>
-        <div className={style.imageDiv}>
+        <div data-aos="zoom-in" className={style.imageDiv}>
           <Image
             src="/avatar.webp"
             alt="Image"

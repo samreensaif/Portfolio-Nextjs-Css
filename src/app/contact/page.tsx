@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React, { useEffect } from "react";
 import style from "./Contact.module.css";
 import { dancingScript, merriweather } from "@/font";
 import {
@@ -9,21 +11,34 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Contact() {
+
+  useEffect(() => {
+    AOS.init({
+      // Customize options here
+      duration: 2000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
+  }, []);
+
+
   return (
     <div className={style.container}>
       <div className={style.contact}>
         <div className={style.formDiv}>
           <div className={style.contactTitle}>
-            <h1 style={{ fontFamily: dancingScript.style.fontFamily }}>
+            <h1 data-aos="zoom-in" data-aos-delay="200" style={{ fontFamily: dancingScript.style.fontFamily }}>
               Connect With Me
             </h1>
-            <p style={{ fontFamily: merriweather.style.fontFamily }}>Let&apos;s turn your vision into reality—shoot me a message!</p>
+            <p data-aos="fade-right" data-aos-delay="400" style={{ fontFamily: merriweather.style.fontFamily }}>Let&apos;s turn your vision into reality—shoot me a message!</p>
           </div>
 
           <div>
-            <form className={style.contactForm}>
+            <form data-aos="fade-up" data-aos-delay="1000" className={style.contactForm}>
               <label htmlFor="fname">First Name: </label>
               <input
                 className={style.inputField}
@@ -103,13 +118,13 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className={style.icn}>
+      <div  className={style.icn}>
         <a
           href="https://www.facebook.com/samreen.saif"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaFacebookF className={style.size} />
+          <FaFacebookF data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
         </a>
 
         <a
@@ -117,7 +132,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagramSquare className={style.size} />
+          <FaInstagramSquare data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
         </a>
 
         <a
@@ -125,7 +140,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className={style.size} />
+          <FaGithub data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
         </a>
 
         <a
@@ -133,7 +148,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiVercel className={style.size} />
+          <SiVercel data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
         </a>
 
         <a
@@ -141,7 +156,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedinIn className={style.size} />
+          <FaLinkedinIn data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
         </a>
 
         <a
@@ -149,7 +164,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTwitter className={style.size} />
+          <FaTwitter data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
         </a>
       </div>
     </div>

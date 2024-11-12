@@ -7,6 +7,11 @@ import Image from "next/image";
 import { data } from "@/constant/data";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
+import Link from "next/link";
+import Latestwork from "@/components/latest-work/Latestwork";
+
+
+
 
 function Projects() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -15,39 +20,61 @@ function Projects() {
 
   useEffect(() => {
     if (emblaApi) {
-      console.log(emblaApi.slideNodes()); // Access API
+      console.log(emblaApi.slideNodes()); 
     }
   }, [emblaApi]);
 
+
+
+  
+
+  
+
   return (
-    <div className={style.projects}>
-      <div className={style.topDiv}>
-        <h1 style={{ fontFamily: dancingScript.style.fontFamily }}>
-          My Projects
-        </h1>
+
+
+
+<>
+
+<Latestwork/>
+
+    <div>
+
+
+      <div className={style.heading}>
+
+        <h1  style={{ fontFamily: dancingScript.style.fontFamily }}>Projects</h1>
+
       </div>
 
-
-
-
-      <div className={style.embla} ref={emblaRef}>
+<div  className={style.embla} ref={emblaRef}>
           <div className={style.embla__container}>
             {data.map((item) => {
               return (
                 <div className={style.embla__slide} key={item.id}>
-                  <div className={style.card}>
+                  <div
+                    className={style.imgDiv}
+                    
+                  >
                     <Image
                       src={item.img}
-                      alt="project1"
+                      alt={"model1"}
                       width={150}
                       height={150}
-                      className={style.image}
-                    ></Image>
+                      className={style.cardImg}
+                    />
                   </div>
 
-                  <div className={style.content}>
-                    <h1 style={{ fontFamily: merriweather.style.fontFamily }}>{item.title}</h1>
-                    <p style={{ fontFamily: merriweather.style.fontFamily }}>{item.content}</p>
+                  <div
+                    className={style.cardText}
+                    style={{ fontFamily: merriweather.style.fontFamily }}
+                  >
+                    <h1>{item.title}</h1>
+                    <p>{item.content}</p>
+
+                    <Link href={item.link} target="_blank">
+                    <button>Link</button>
+                    </Link>
                   </div>
                 </div>
               );
@@ -55,8 +82,14 @@ function Projects() {
           </div>
         </div>
 
+
+
+
+
+
     </div>
-  );
+    </>
+  )
 }
 
 export default Projects;
