@@ -26,10 +26,6 @@ function About() {
       once: true, // Whether animation should happen only once - while scrolling down
     });
   }, []);
-
-
-
-
   return (
     <div>
       <div className={style.about}>

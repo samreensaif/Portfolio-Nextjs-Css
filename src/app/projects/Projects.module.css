@@ -48,6 +48,7 @@
         overflow: hidden;   
         border-radius: 10px;
         
+        
     }
     .cardImg{
         width:150px;
@@ -110,13 +111,50 @@
     @media (max-width: 768px) {
     
     
-        .board{
-            position: relative;
-            z-index: -100;
-        }
-    
-        .embla{
-            position: relative;
-            z-index: -100;
-        }
+          .embla__container {
+           
+            padding-bottom:80px;
+            
+          }
+          .embla__slide {
+             
+              padding-top:20px;
+              padding-bottom:20px;
+              margin-right: 2.9375rem;
+          }
+          
+          .imgDiv{
+      
+              width:280px;
+              height:200px;
+              
+          }
+          .cardImg{
+              width:130px;
+              height:130px;
+              
+          }
+          
+          .cardText{
+              
+              gap:10px;
+          }
+          
+          .cardText h1{
+              font-size:20px;
+              
+          }
+      
+          .cardText button{
+              width: 80px;
+              height:32px;
+             
+              font-size: 16px;
+              
+              padding:0 18px;
+              
+              margin-top:20px;
+              
+              } 
+          
     }
