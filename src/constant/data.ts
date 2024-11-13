@@ -56,7 +56,7 @@ export const data = [
         img:"/images/portfolio2.jpg",
         title: "Personal Portfolio",
         content:"MultiPage Website Built on HTML and CSS",
-        link:"https://portfolio-html-seven-azure.vercel.app/"
+        link:"https://portfolio-html-brown.vercel.app/"
         
     },
     {
