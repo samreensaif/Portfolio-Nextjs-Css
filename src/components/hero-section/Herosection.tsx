@@ -9,7 +9,7 @@ import { SiFiverr } from "react-icons/si";
 import { FaUpwork } from "react-icons/fa6";
 import { SiFreelancer } from "react-icons/si";
 import { SiToptal } from "react-icons/si";
-import {  merriweather, sourGummy } from '@/font';
+import {  merriweather, caveat } from '@/font';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -33,7 +33,7 @@ function Herosection() {
   return (
     <div className={style.hero}>
 
-    <h1 data-aos="fade-right" data-aos-delay="600" style={{ fontFamily: merriweather.style.fontFamily }}>Hey! I&apos;m <span className={style.color} style={{ fontFamily: sourGummy.style.fontFamily }}>SAMREEN SAIF.</span><br />A Frontend Web Developer.</h1>
+    <h1 data-aos="fade-right" data-aos-delay="600" style={{ fontFamily: merriweather.style.fontFamily }}>Hey! I&apos;m <span className={style.color} style={{ fontFamily: caveat.style.fontFamily }}>SAMREEN SAIF.</span><br />A Frontend Web Developer.</h1>
     
     
     <p data-aos="fade-left" data-aos-delay="1000"style={{ fontFamily: merriweather.style.fontFamily }}>I can build user interface for web sites and applications with React JS and Next.Js <br />

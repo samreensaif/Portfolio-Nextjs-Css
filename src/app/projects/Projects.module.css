@@ -7,7 +7,7 @@
     padding-top:50px;
 } 
 
-.heading h1{
+.projects h1{
     font-size: 4.125rem;
     
     text-align:center;
@@ -27,14 +27,11 @@
       display: flex;
       padding-bottom:100px;
       
+      
     }
     .embla__slide {
         display: flex;
-        box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
-
-        
-        padding-top:40px;
-        padding-bottom:40px;
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);       
         margin-right: 3.9375rem;
     }
     
@@ -67,7 +64,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap:20px;
+        
         color:#6c584c
     }
     
@@ -89,7 +86,8 @@
         outline: none;
         padding:0 20px;
         margin:auto;
-        margin-top:30px;
+        margin-top:20px;
+        margin-bottom:20px;
         background-color: #ADC178;
         &:hover{
             box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.2);

@@ -2,9 +2,9 @@ import { Dancing_Script } from 'next/font/google';
 
 import { Merriweather } from 'next/font/google';
 
-import { Sour_Gummy } from 'next/font/google';
+import { Caveat } from 'next/font/google';
 
-export const sourGummy = Sour_Gummy({
+export const caveat = Caveat({
   weight: ['400'], // Sour Gummy usually has one weight available (400)
   subsets: ['latin'], // Adjust subsets as needed
   display: 'swap', // Improves loading performance
