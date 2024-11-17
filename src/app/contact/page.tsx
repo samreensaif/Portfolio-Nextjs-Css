@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from "react";
+import React from "react";
 import style from "./Contact.module.css";
 import { dancingScript, merriweather } from "@/font";
 import {
@@ -11,19 +11,40 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { SiVercel } from "react-icons/si";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+
+
+import { sendEmail } from "@/utils/emailService";
 
 function Contact() {
 
-  useEffect(() => {
-    AOS.init({
-      // Customize options here
-      duration: 2000, // Animation duration in milliseconds
-      easing: 'ease-in-out', // Easing function
-      once: true, // Whether animation should happen only once - while scrolling down
-    });
-  }, []);
+
+const [name,setName]=React.useState("");
+const [email,setEmail]=React.useState("");
+const [message,setMessage]=React.useState("");
+
+
+const handleSubmit = async(e:React.FormEvent<HTMLFormElement>)=>{
+  e.preventDefault();
+  const templateParams = {
+    to_name:"Samreen Saif",
+    from_name:name,
+    from_email:email,
+    message:message
+  };
+
+
+  try{
+    await sendEmail(templateParams);
+    alert("Email sent successfully");
+    setName("");
+    setEmail("");
+    setMessage("");
+  }catch(error){
+    console.error("Failed to send email:", error);
+    alert("Failed to send email");
+  }
+}
+
 
 
   return (
@@ -31,77 +52,54 @@ function Contact() {
       <div className={style.contact}>
         <div className={style.formDiv}>
           <div className={style.contactTitle}>
-            <h1 data-aos="zoom-in" data-aos-delay="200" style={{ fontFamily: dancingScript.style.fontFamily }}>
+            <h1  style={{ fontFamily: dancingScript.style.fontFamily }}>
               Connect With Me
             </h1>
-            <p data-aos="fade-right" data-aos-delay="400" style={{ fontFamily: merriweather.style.fontFamily }}>Let&apos;s turn your vision into reality—shoot me a message!</p>
+            <p  style={{ fontFamily: merriweather.style.fontFamily }}>Let&apos;s turn your vision into reality—shoot me a message!</p>
           </div>
 
           <div>
-            <form data-aos="fade-up" data-aos-delay="1000" className={style.contactForm}>
-              <label htmlFor="fname">First Name: </label>
+            <form onSubmit={handleSubmit}  className={style.contactForm}>
+              <label htmlFor="fname"> Name: </label>
               <input
                 className={style.inputField}
                 type="text"
                 id="fname"
-                name="fname"
+                name="name"
+                value={name}
                 autoComplete="off"
-                placeholder="Enter your first name"
+                placeholder="Your Name"
                 required
+                onChange={(e) => setName(e.target.value)}
               />
 
-              <label htmlFor="lname">Last Name:</label>
-              <input
-                className={style.inputField}
-                type="text"
-                id="lname"
-                name="lname"
-                autoComplete="off"
-                placeholder="Enter your last name"
-                required
-              />
 
-              <label>Gender:</label>
-              <div className={style.genderOptions}>
-                <input
-                  className={style.inputRadio}
-                  type="radio"
-                  id="male"
-                  name="gender"
-                  value="male"
-                  required
-                />
-                <label htmlFor="male">Male</label>
-
-                <input
-                  className={style.inputRadio}
-                  type="radio"
-                  id="female"
-                  name="gender"
-                  value="female"
-                />
-                <label htmlFor="female">Female</label>
-
-                <input
-                  className={style.inputRadio}
-                  type="radio"
-                  id="other"
-                  name="gender"
-                  value="other"
-                />
-                <label htmlFor="other">Other</label>
-              </div>
-
+              
               <label htmlFor="email">Email Address:</label>
               <input
                 className={style.inputField}
                 type="email"
                 id="email"
                 name="email"
+                value={email}
                 autoComplete="off"
-                placeholder="Enter your email address"
+                placeholder="Email"
+                required
+                onChange={(e) => setEmail(e.target.value)}
+              />
+
+
+              <label htmlFor="subject">Subject:</label>
+              <input
+                className={style.inputField}
+                type="text"
+                id="lname"
+                name="lname"
+                autoComplete="off"
+                placeholder="Subject"
                 required
               />
+
 
               <label htmlFor="message">Message:</label>
               <textarea
@@ -109,7 +107,9 @@ function Contact() {
                 id="message"
                 name="message"
                 rows={4}
-                placeholder="Write your message here"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Message"
               ></textarea>
               <a href="/contact">
               <button type="submit">Submit</button>
@@ -124,7 +124,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaFacebookF data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
+          <FaFacebookF  className={style.size} />
         </a>
 
         <a
@@ -132,7 +132,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagramSquare data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
+          <FaInstagramSquare  className={style.size} />
         </a>
 
         <a
@@ -140,7 +140,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
+          <FaGithub  className={style.size} />
         </a>
 
         <a
@@ -148,7 +148,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SiVercel data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
+          <SiVercel  className={style.size} />
         </a>
 
         <a
@@ -156,7 +156,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaLinkedinIn data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
+          <FaLinkedinIn  className={style.size} />
         </a>
 
         <a
@@ -164,7 +164,7 @@ function Contact() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTwitter data-aos="zoom-in" data-aos-delay="1500" className={style.size} />
+          <FaTwitter  className={style.size} />
         </a>
       </div>
     </div>

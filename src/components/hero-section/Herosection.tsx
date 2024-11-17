@@ -1,7 +1,7 @@
 "use client"
 
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import style from "./Herosection.module.css"
 import { FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { SiVercel } from 'react-icons/si';
@@ -9,46 +9,60 @@ import { SiFiverr } from "react-icons/si";
 import { FaUpwork } from "react-icons/fa6";
 import { SiFreelancer } from "react-icons/si";
 import { SiToptal } from "react-icons/si";
-import {  merriweather, caveat } from '@/font';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import {  merriweather, rajdhaniFont } from '@/font';
+import { Typewriter } from 'react-simple-typewriter'
+import {motion} from 'framer-motion';
+
 
 
 function Herosection() {
 
 
-
-
-  useEffect(() => {
-    AOS.init({
-      // Customize options here
-      duration: 2500, // Animation duration in milliseconds
-      easing: 'ease-in-out', // Easing function
-      once: true, // Whether animation should happen only once - while scrolling down
-    });
-  }, []);
-
-
-
   return (
+
     <div className={style.hero}>
 
-    <h1 data-aos="fade-right" data-aos-delay="600" style={{ fontFamily: merriweather.style.fontFamily }}>Hey! I&apos;m <span className={style.color} style={{ fontFamily: caveat.style.fontFamily }}>SAMREEN SAIF.</span><br />A Frontend Web Developer.</h1>
+    <h1 style={{ fontFamily: merriweather.style.fontFamily }}>Hey! I&apos;m 
+
+
+    <div style={{ marginBottom: "10px" }}>
+      <span className={style.color} style={{ fontFamily: rajdhaniFont.style.fontFamily }}>SAMREEN SAIF.</span>
+      {" "}
+      <motion.span style={{ fontSize: "50px" ,display: "inline-block" }}
+      
+      animate={{rotate: [0, 25, 0, -25,0]}}
+      transition={{duration:0.5 , repeat: Infinity , ease: "linear"}}>
+      
+      👋</motion.span>
+      
+      </div>
+      
+      
+      <Typewriter
+      words={['A Frontend Web Developer.','UI/UX Designer.','A Coding Enthusiast.']}
+      loop={0}
+      cursor={true}
+      cursorStyle='_'
+      typeSpeed={80}
+      deleteSpeed={50}
+      delaySpeed={1500}
+      />
+      </h1>
     
     
-    <p data-aos="fade-left" data-aos-delay="1000"style={{ fontFamily: merriweather.style.fontFamily }}>I can build user interface for web sites and applications with React JS and Next.Js <br />
+    <p style={{ fontFamily: merriweather.style.fontFamily }}>I can build user interface for web sites and applications with React JS and Next.Js <br />
     I love the front end development.</p>
     
     
     <a href="/contact">
 
 
-    <button data-aos="zoom-in" data-aos-delay="1400">Hire Me </button>
+    <button >Hire Me </button>
     </a>
 
 
 
-    <div data-aos="zoom-in" data-aos-delay="2000" className={style.icons}>
+    <div  className={style.icons}>
         <a
           href="https://www.facebook.com/samreen.saif"
           target="_blank"

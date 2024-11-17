@@ -9,13 +9,14 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
 import Latestwork from "@/components/latest-work/Latestwork";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 
 function Projects() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 2000, stopOnMouseEnter: true, stopOnInteraction: false }),
-  ]);
+  ] );
+
+ 
 
   useEffect(() => {
     if (emblaApi) {
@@ -23,14 +24,7 @@ function Projects() {
     }
   }, [emblaApi]);
 
-  useEffect(() => {
-    AOS.init({
-      // Customize options here
-      duration: 2000, // Animation duration in milliseconds
-      easing: "ease-in-out", // Easing function
-      once: true, // Whether animation should happen only once - while scrolling down
-    });
-  }, []);
+  
 
   return (
     <>
@@ -39,8 +33,7 @@ function Projects() {
       <div className={style.projects}>
         <h1
           
-          data-aos="zoom-in"
-          data-aos-delay="200"
+         
           style={{ fontFamily: dancingScript.style.fontFamily }}
         >
           Projects

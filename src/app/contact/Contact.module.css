@@ -79,20 +79,8 @@
     background-color: #ADC178;
 }
 
-/* Radio button styling */
-.inputRadio {
-    margin-right: 10px;
-    accent-color: #6c584c;
-}
 
 
-/* Gender options container */
-.genderOptions {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: 15px;
-}
 
 /* Textarea additional styling */
 .inputField textarea {
@@ -175,12 +163,5 @@
 
     .contactTitle p {
         font-size: 18px;
-    }
-    .inputRadio {
-        width: 16px;
-        height: 16px;
-    }
-    .genderOptions label {
-        font-size: 16px;
     }
 }

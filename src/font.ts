@@ -1,14 +1,8 @@
 import { Dancing_Script } from 'next/font/google';
 
 import { Merriweather } from 'next/font/google';
+import { Rajdhani } from 'next/font/google';
 
-import { Caveat } from 'next/font/google';
-
-export const caveat = Caveat({
-  weight: ['400'], // Sour Gummy usually has one weight available (400)
-  subsets: ['latin'], // Adjust subsets as needed
-  display: 'swap', // Improves loading performance
-});
 
 
 export const merriweather = Merriweather({
@@ -21,4 +15,12 @@ export const dancingScript = Dancing_Script({
   weight: ['400', '500', '600', '700'], // Available weights for Dancing Script
   subsets: ['latin'], // Adjust subsets as needed
   display: 'swap', // Improves loading performance
+});
+
+
+
+export const rajdhaniFont = Rajdhani({
+  subsets: ['latin'],
+  variable: '--font-rajdhani',
+  weight: ['300', '400','600', '700'],
 });
