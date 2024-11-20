@@ -38,7 +38,7 @@ function Services() {
             <Card
               img={
                 <PiPaintBrushFill
-                  size={80}
+                  
                   color="#6C584C"
                   className={style.icon}
                 />
@@ -54,7 +54,7 @@ function Services() {
             <Card
               img={
                 <IoRocketSharp
-                  size={80}
+                  
                   color="#6C584C"
                   className={style.icon}
                 />
@@ -70,7 +70,7 @@ function Services() {
             <Card
               img={
                 <RiGitBranchLine
-                  size={80}
+                  
                   color="#6C584C"
                   className={style.icon}
                 />
@@ -86,7 +86,7 @@ function Services() {
           
           >
             <Card
-              img={<CgDebug size={80} color="#6C584C" className={style.icon} />}
+              img={<CgDebug  color="#6C584C" className={style.icon} />}
               title="Debugging"
               desc=" Writing tests for individual components using frameworks like Jest or React Testing Library."
             />

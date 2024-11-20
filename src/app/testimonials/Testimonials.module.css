@@ -23,6 +23,7 @@
     gap:95px;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 100px;
+    
 
 }
 
@@ -76,15 +77,14 @@
 }
 
 @media (max-width: 768px) { 
-    
+    .myWork{
+        width:80%;
+    }
+
 .testimonials h1{
 
     font-size: 3.125rem;    
-    text-align:center;
-    color:#6c584c;
-    font-weight: bold;
     
-
 }
 
 
@@ -96,14 +96,25 @@
     
 }
 .myWork {
-    grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
-    gap: 50px; /* Adjust gap for smaller screens if needed */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px; 
 }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
+    .testimonials h1{
+
+        font-size: 3rem;    
+        
+    }
+
+    .content h1{
+        font-size: 1rem;
+    }
+
     .myWork {
-        grid-template-columns: 1fr; /* Change to a single column */
-        gap: 30px; /* Further reduce gap for mobile view */
+        grid-template-columns: 1fr; 
+        gap: 30px; 
+        width:75%;
     }
 }

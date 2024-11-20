@@ -32,7 +32,10 @@
     font-weight: bold;
 }
 
-
+.icon{
+    width:80px;
+    height:80px;
+}
 
 .topDiv p{
     margin-top:30px;
@@ -75,11 +78,30 @@
         text-align: center;
         padding:0 10px;
     }
-
+    .icon{
+        width:70px;
+        height:70px;
+    }
 
     .margin{
         margin: 0px 10px;
     }
 
     .topDiv p br { display: none; }
+}
+
+
+@media (max-width: 390px) {
+
+    .topDiv h1{
+        font-size: 3rem;
+    }
+
+    .topDiv p{
+        font-size: 16px;
+    }
+    .icon{
+        width:60px;
+        height:60px;
+    }
 }

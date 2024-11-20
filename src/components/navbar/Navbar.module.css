@@ -85,15 +85,14 @@
         
         position: absolute;
         top: 96px;
-        right: 0;
-        width: 100%;
+        left: 0;
+        width: 50%;
         height:332px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.2);
-        z-index: 10000;
         
         background-color: rgb(108   ,88,76)
        
@@ -110,10 +109,17 @@
         
     }
     .adjust ul li{
-        font-size: 25px; 
+        font-size: 20px; 
         font-weight: 600;
         color:#DDE5B6;
     }
 
     
+}
+
+@media (max-width: 390px) {
+
+    .adjust ul li {
+        font-size: 18px;
+    }
 }

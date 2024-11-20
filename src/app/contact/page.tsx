@@ -14,6 +14,7 @@ import { SiVercel } from "react-icons/si";
 
 
 import { sendEmail } from "@/utils/emailService";
+import { motion } from "framer-motion";
 
 function Contact() {
 
@@ -119,53 +120,71 @@ const handleSubmit = async(e:React.FormEvent<HTMLFormElement>)=>{
         </div>
       </div>
       <div  className={style.icn}>
-        <a
+        <motion.a
+
+        whileHover={{rotateY:180}}
+        transition={{duration:1}}
           href="https://www.facebook.com/samreen.saif"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaFacebookF  className={style.size} />
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+
+        whileHover={{rotateY:180}}
+        transition={{duration:1}}
           href="https://www.instagram.com/samreen_saif4"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaInstagramSquare  className={style.size} />
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+
+        whileHover={{rotateY:180}}
+        transition={{duration:1}}
           href="https://www.github.com/samreensaif"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaGithub  className={style.size} />
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+
+        whileHover={{rotateY:180}}
+        transition={{duration:1}}
           href="https://www.vercel.com/samreensaif-projects"
           target="_blank"
           rel="noopener noreferrer"
         >
           <SiVercel  className={style.size} />
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+
+        whileHover={{rotateY:180}}
+        transition={{duration:1}}
           href="https://www.linkedin.com/in/samreen-saif-16141027a/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedinIn  className={style.size} />
-        </a>
+        </motion.a>
 
-        <a
+        <motion.a
+
+        whileHover={{rotateY:180}}
+        transition={{duration:1}}
           href="https://www.twitter.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaTwitter  className={style.size} />
-        </a>
+        </motion.a>
       </div>
     </div>
   );

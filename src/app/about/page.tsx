@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 
 
 
+
 const containerVariants = {
   hidden: {},
 
@@ -45,7 +46,7 @@ const itemVariants ={
 
 function About() {
     return (
-    <div>
+    <div className={style.container}>
       <div className={style.about}>
 
 
@@ -98,36 +99,36 @@ function About() {
 
         
         <motion.div variants={itemVariants}>
-          <FaHtml5 size={80} color="#ADC178" />
+          <FaHtml5 className={style.size} color="#ADC178" />
         </motion.div>
         
         <motion.div variants={itemVariants}>
-        <FaCss3Alt size={80} color="#ADC178" />
+        <FaCss3Alt className={style.size} color="#ADC178" />
         </motion.div>
 
         <motion.div variants={itemVariants}>
-        <RiNextjsFill size={80} color="#ADC178" />
+        <RiNextjsFill className={style.size} color="#ADC178" />
         </motion.div>
 
 
         <motion.div variants={itemVariants}>
-        <RiTailwindCssFill size={80} color="#ADC178" />
+        <RiTailwindCssFill className={style.size} color="#ADC178" />
         </motion.div>
 
         <motion.div variants={itemVariants}>
-        <IoLogoJavascript size={80} color="#ADC178" />
+        <IoLogoJavascript className={style.size} color="#ADC178" />
         </motion.div>
 
         <motion.div variants={itemVariants}>
-        <BiLogoTypescript size={80} color="#ADC178" />
+        <BiLogoTypescript className={style.size} color="#ADC178" />
         </motion.div>
 
         <motion.div variants={itemVariants}>
-        <SiShadcnui size={80} color="#ADC178" />
+        <SiShadcnui className={style.size} color="#ADC178" />
         </motion.div>
 
         <motion.div variants={itemVariants}>
-        <FaBootstrap size={80} color="#ADC178" />
+        <FaBootstrap className={style.size} color="#ADC178" />
         </motion.div>
 
       </motion.div>
