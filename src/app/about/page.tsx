@@ -14,7 +14,10 @@ import { SiShadcnui } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { dancingScript, merriweather } from "@/font";
 import { motion } from "framer-motion";
-
+import { AiOutlinePython } from 'react-icons/ai';
+import { BsDatabaseDown } from 'react-icons/bs';
+import { SiFastapi } from "react-icons/si";
+import { SiStreamlit } from "react-icons/si";
 
 
 
@@ -61,10 +64,12 @@ function About() {
           <p style={{ fontFamily: merriweather.style.fontFamily }}>Freelance Web Developer</p>
 
           <p className={style.font} style={{ fontFamily: merriweather.style.fontFamily }}>
-            I can build user interface for web sites and applications with React
-            JS and Next.Js I love the front end development. I am a self learner
-            and I am always looking to learn more about the field of web
-            development.
+          "Junior Full Stack Developer with hands-on experience in building modern web applications 
+          using React.js and Next.js on the front end, and Python, FastAPI, and Streamlit on the back end. 
+          Skilled in creating clean, responsive user interfaces and developing scalable, data-driven 
+          solutions. Proficient in working with PostgreSQL, MySQL, and MongoDB databases, with experience 
+          integrating Sanity as a headless CMS. Passionate about continuous learning and committed to delivering 
+          efficient, user-focused applications through collaboration and innovation."
           </p>
           <a href="/contact">
           <button>Contact Me</button>
@@ -129,6 +134,22 @@ function About() {
 
         <motion.div variants={itemVariants}>
         <FaBootstrap className={style.size} color="#ADC178" />
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+        <AiOutlinePython className={style.size} color="#ADC178" />
+        </motion.div>
+        
+        <motion.div variants={itemVariants}>
+        <BsDatabaseDown className={style.size} color="#ADC178" />
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+        <SiStreamlit className={style.size} color="#ADC178" />
+        </motion.div>
+
+        <motion.div variants={itemVariants}>
+        <SiFastapi className={style.size} color="#ADC178" />
         </motion.div>
 
       </motion.div>

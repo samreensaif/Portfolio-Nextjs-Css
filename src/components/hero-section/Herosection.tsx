@@ -43,7 +43,7 @@ function Herosection() {
       
       
       <Typewriter
-      words={['A Frontend Web Developer.','UI/UX Designer.','A Coding Enthusiast.']}
+      words={['A Junior Full Stack Developer.' ,' A Junior Frontend Web Developer.','A Junior Backend Developer.','UI/UX Designer.','A Coding Enthusiast.']}
       loop={0}
       cursor={true}
       cursorStyle='_'
@@ -54,8 +54,8 @@ function Herosection() {
       </h1>
     
     
-    <p style={{ fontFamily: merriweather.style.fontFamily }}>I can build user interface for web sites and applications with React JS and Next.Js <br />
-    I love the front end development.</p>
+    <p style={{ fontFamily: merriweather.style.fontFamily }}>I build full-stack web applications with a focus on <br />clean UI/UX using React.js, Next.js, and Python-based back-end technologies. <br />
+    I'm passionate about creating seamless user experiences and writing clean, efficient code..</p>
     
     
     <a href="/contact">

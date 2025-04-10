@@ -66,7 +66,56 @@ export const data = [
         content:"MultiPage Website Built on NextJs and CSS",
         link:"https://portfolio-nextjs-css-final.vercel.app/"
         
-    }
+    },
+    {
+        id:9,        
+        img:"/images/agentia.png",
+        title: "Agentia-AI-World",
+        content:"Website Built on NextJs and CSS",
+        link:"https://agentia-ai-world.vercel.app/"
+        
+    },
+    {
+        id:10,        
+        img:"/images/dogsApi.png",
+        title: "The Dogs Api",
+        content:"Website Built on NextJs and CSS on Using API",
+        link:"https://the-dogs-api.vercel.app"
+        
+    },
+    {
+        id:11,        
+        img:"/images/salt.png",
+        title: "Little Salt - Blog Website",
+        content:"Food Blog Website Built on NextJs and CSS",
+        link:"https://food-blog-little-salt.vercel.app/"
+        
+    },
+    {
+        id:12,        
+        img:"/images/furniro.png",
+        title: "Furniro - E-Commerce Website ",
+        content:"E-commerce Website Built on NextJs and CSS",
+        link:"https://hackathon-furniro-one.vercel.app/"
+        
+    },
+    {
+        id:13,        
+        img:"/images/dashboard.png",
+        title: " Dashboard - E-Commerce Website ",
+        content:"Dashboard of E-Commerce Website Built on NextJs and CSS",
+        link:"https://admin-dashboard-one-khaki-57.vercel.app/"
+        
+    },
+    
+    {
+        id:14,        
+        img:"/images/fast.png",
+        title: " FastApi - CRUD Operation ",
+        content:"FastApi Website ",
+        link:"https://testing-fast-api-eta.vercel.app/docs"
+        
+    },
     
    
     
