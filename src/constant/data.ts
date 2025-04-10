@@ -64,7 +64,7 @@ export const data = [
         img:"/images/portfolio3.jpg",
         title: "Personal Portfolio",
         content:"MultiPage Website Built on NextJs and CSS",
-        link:"https://portfolio-nextjs-css-final.vercel.app/"
+        link:"https://portfolio-nextjs-css-2jc8.vercel.app/"
         
     },
     {
